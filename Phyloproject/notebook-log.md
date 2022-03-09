@@ -21,3 +21,54 @@ To merge various .fasta files use "cat" command. In this case "> 1.fasta" means 
 
 	cat 2.fasta 3.fasta 4.fasta 5.fasta 6.fasta 7.fasta 8.fasta 9.fasta 10.fasta 11.fasta 12.fasta 13.fasta 14.fasta 15.fasta 16.fasta 17.fasta 18.fasta 19.fasta 20.fasta 21.fasta >1.fasta
 
+[March 2]
+
+I had problems installing R, this error pop up:
+
+Error reading R script (), system error 2 (No such file or directory); Unable to find libR.dylib in expected locationswithin R Home directory /Library/Frameworks/R.framework/Resources.
+
+I solved installing first the R-4.1.pkg from here: https://cran.r-project.org/bin/macosx/
+
+Later I tried to install these packages
+
+install.packages("adegenet", dep=TRUE)
+install.packages("phangorn", dep=TRUE)
+
+But this error keeps popping up
+
+Warning in install.packages :  installation of package ‘ape’ had non-zero exit status
+
+I (apparently) solved it using tools/install packages/ape on R and responding with a NO to the following question:
+
+Do you want to install from sources the package which needs compilation? (Yes/no/cancel) 
+
+Now the packages run without any problems
+
+library(ape)
+library(adegenet)
+library(phangorn)
+
+
+#[March 4]
+
+#On R I establish my working directory by using the navigation tab to the right, once I found the folder where my aligned sequences are I click on the blue icon and choose "Set as working directory", this means that you can call any file inside that working directory just by putting its name.
+
+#Another way to do it is typing this command (on Mac):
+
+> setwd("/Users/admin/Documents/botany563_/Phyloproject/")
+
+#You can always see what files are in your working directory by typing: dir()
+
+#Then used 
+dna <- fasta2DNAbin(file="http://adegenet.r-forge.r-project.org/files/usflu.fasta")
+
+#Change "http:......" With the name of your sequence file, in my case is "vanilla_rbcl-aligned.fast"
+
+#So the command looks like:
+> dna <- fasta2DNAbin(file="vanilla_rbcl-aligned.fasta")[Marcg 9]
+
+#That last command seems not to work properly so instead I ran this one:
+
+> dna_vanilla_rbcl <-read.dna("vanilla_rbcl-aligned.fasta")> D <- dist.dna(dna_vanilla_rbcl, model = "TN93")> tre<- nj(D)> tre <- ladderize(tre)> plot(tre, cex=.6)
+
+ 
