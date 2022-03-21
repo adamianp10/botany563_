@@ -36,7 +36,8 @@ install.packages("phangorn", dep=TRUE)
 
 But this error keeps popping up
 
-Warning in install.packages :  installation of package ‘ape’ had non-zero exit status
+Warning in install.packages :
+  installation of package ‘ape’ had non-zero exit status
 
 I (apparently) solved it using tools/install packages/ape on R and responding with a NO to the following question:
 
@@ -65,10 +66,62 @@ dna <- fasta2DNAbin(file="http://adegenet.r-forge.r-project.org/files/usflu.fast
 #Change "http:......" With the name of your sequence file, in my case is "vanilla_rbcl-aligned.fast"
 
 #So the command looks like:
-> dna <- fasta2DNAbin(file="vanilla_rbcl-aligned.fasta")[Marcg 9]
+> dna <- fasta2DNAbin(file="vanilla_rbcl-aligned.fasta")
 
+[March 9]
+==============================================
+#How to change headers
+I used this command to change my sequences headers before the alignment
+the idea was to had this headers changed on my allignment, that didnt work
+
+ > new_name<-word(old_name,start=1,end=3,sep=fixed(" "))
+ > ref2<-data.frame(old_name,new_name)
+> rename.fasta(infile = "vanilla_rbcl.fasta",ref_table = ref2,outfile = "renamed.vanilla_rbcl.fasta")
+> clean.fasta.name("renamed.vanilla_rbcl.fasta")
+================================================
+
+#msa package
+How to run clustalW, ClustalO, muscle 
+Follow this link for installation of msa
+http://bioconductor.org/packages/release/bioc/vignettes/msa/inst/doc/msa.pdf
+#set up your directory first
+#load the following libraries
+
+>library(ape)
+library(msa)
+library(seqinr)
+
+> myseq_rbcl<-readDNAStringSet("vanilla_matk/rbcl.fasta")
+> muscle<-msa(mySeq_VANILLA_rbcl, "Muscle")
+> muscle2<-msaConvert(muscle, type="seqinr::alignment")
+> d<-dist.alignment(muscle2)
+> muscle_tree<-nj(d)
+>plot(muscle_tree)
+
+#I've tried to used msa package with others as ape and phangorn, that didn't work, aparently the conversion feature on msa package does not transformr well DNAbin objects 
+
+######DISTANCE-BASED METHOD
 #That last command seems not to work properly so instead I ran this one:
 
-> dna_vanilla_rbcl <-read.dna("vanilla_rbcl-aligned.fasta")> D <- dist.dna(dna_vanilla_rbcl, model = "TN93")> tre<- nj(D)> tre <- ladderize(tre)> plot(tre, cex=.6)
+> dna_vanilla_rbcl <-read.dna("vanilla_rbcl-aligned.fasta")
+> D <- dist.dna(dna_vanilla_rbcl, model = "TN93")
+> tre<- nj(D)
+> tre <- ladderize(tre)
+> plot(tre, cex=.6)
 
- 
+
+###### PARSIMONY-BASED METHODS
+#using adegener and phangorn packagaes
+#load the libraries
+library(ape)
+library(adegenet)
+library(phangorn)
+
+#load the alligned fasta file
+> dna_vanilla_rbcl<-read.dna("vanilla_rbcl-aligned.fasta")
+> dna2_vanilla_rbcl<-as.phyDat(dna_vanilla_rbcl)
+> tre.ini <- nj(dist.dna(dna_vanilla_rbcl,model="raw"))
+> parsimony(tre.ini, dna2_vanilla_rbcl)
+> tre.pars <- optim.parsimony(tre.ini, dna2_vanilla_rbcl)
+> plot(tre.pars, cex=0.6)
+
