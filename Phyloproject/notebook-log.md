@@ -2,6 +2,10 @@ Course project
 
 My research aims to reconstruct a complete phylogeny of the neotropical clades of the orchid genus Vanilla (subgen. Vanilla and sect. Xanata). Since I don't have my own data yet, I'll use accessions posted in GenBank, the DNA regions chosen are matK and rbcL.
 
+#git commands
+  git add . 
+  git commit –m “uploaded README.txt” 
+  git push 
 
 [Feb23]
 
@@ -92,7 +96,7 @@ library(msa)
 library(seqinr)
 
 > myseq_rbcl<-readDNAStringSet("vanilla_matk/rbcl.fasta")
-> muscle<-msa(mySeq_VANILLA_rbcl, "Muscle")
+> muscle<-msa(myseq_rbcl, "Muscle")
 > muscle2<-msaConvert(muscle, type="seqinr::alignment")
 > d<-dist.alignment(muscle2)
 > muscle_tree<-nj(d)
@@ -110,9 +114,8 @@ library(seqinr)
 > plot(tre, cex=.6)
 
 
-###### PARSIMONY-BASED METHODS
-#using adegener and phangorn packagaes
-#load the libraries
+######PARSIMONY-BASED METHODS
+
 library(ape)
 library(adegenet)
 library(phangorn)

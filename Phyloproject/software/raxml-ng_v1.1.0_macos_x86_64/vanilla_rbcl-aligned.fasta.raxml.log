@@ -1,0 +1,48 @@
+
+RAxML-NG v. 1.1.0 released on 29.11.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz, 2 cores, 16 GB RAM
+
+RAxML-NG was called at 31-Mar-2022 18:49:32 as follows:
+
+./raxml-ng -check -msa vanilla_rbcl-aligned.fasta -model GTR+G
+
+Analysis options:
+  run mode: Alignment validation
+  start tree(s): 
+  random seed: 1648770572
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+[00:00:00] Reading alignment from file: vanilla_rbcl-aligned.fasta
+[00:00:00] Loaded alignment with 27 taxa and 1322 sites
+
+WARNING: Sequences MW828176.1 and MW828177.1 are exactly identical!
+WARNING: Duplicate sequences found: 1
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /Users/admin/Documents/botany563_/Phyloproject/software/raxml-ng_v1.1.0_macos_x86_64/vanilla_rbcl-aligned.fasta.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 1322 sites
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites: 1322
+Gaps: 32.61 %
+Invariant sites: 95.54 %
+
+
+
+Alignment can be successfully read by RAxML-NG.
+
+
+Execution log saved to: /Users/admin/Documents/botany563_/Phyloproject/software/raxml-ng_v1.1.0_macos_x86_64/vanilla_rbcl-aligned.fasta.raxml.log
+
+Analysis started: 31-Mar-2022 18:49:32 / finished: 31-Mar-2022 18:49:32
+
+Elapsed time: 0.016 seconds
+

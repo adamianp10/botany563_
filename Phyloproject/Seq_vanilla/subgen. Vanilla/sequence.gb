@@ -1,0 +1,374 @@
+LOCUS       AY705155                1296 bp    DNA     linear   PLN 26-JUL-2016
+DEFINITION  Vanilla inodora PsbB (psbB) gene, partial cds; chloroplast.
+ACCESSION   AY705155
+VERSION     AY705155.1
+KEYWORDS    .
+SOURCE      chloroplast Vanilla inodora
+  ORGANISM  Vanilla inodora
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; Liliopsida; Asparagales; Orchidaceae;
+            Vanilloideae; Vanilleae; Vanilla.
+REFERENCE   1  (bases 1 to 1296)
+  AUTHORS   Cameron,K.M. and Molina,M.C.
+  TITLE     Photosystem II gene sequences of psbB and psbC clarify the
+            phylogenetic position of Vanilla (Vanilloideae, Orchidaceae)
+  JOURNAL   Cladistics 22 (3), 239-248 (2006)
+REFERENCE   2  (bases 1 to 1296)
+  AUTHORS   Molina,M.C. and Cameron,K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-AUG-2004) The Lewis B. and Dorothy Cullman Program
+            for Molecular Systematics Studies, The New York Botanical Garden,
+            Bronx, NY 1058-5126, USA
+FEATURES             Location/Qualifiers
+     source          1..1296
+                     /organism="Vanilla inodora"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /isolate="1077"
+                     /specimen_voucher="C. McCartney s.n."
+                     /db_xref="taxon:256751"
+     gene            <1..>1296
+                     /gene="psbB"
+     CDS             <1..>1296
+                     /gene="psbB"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="PsbB"
+                     /protein_id="AAX09349.1"
+                     /translation="DPGRLLSVHIMHTALVSGWAGSMALYELAVFDPSDPILDPMWRQ
+                     GMFVIPFMTRLGITNSWGGWSISGRTITNSGIWSYEGVAGAHIVFSGLCFLAAIWHWV
+                     YWDLZIFCDERTGKPSLDLPKIFGIHLFLSGVACFGFGAFHVTGLYGPGIWVSDPYGL
+                     TGKVQSVNPAWGAEGFDPFVPGGIASHHIAAGILGILAGLFHLSVRPPQRLYKGLRMG
+                     NIETVLSSSIAAVFFAAFVVAGTMWYGSATTPIELFGPTRYQWDQGYFQQEIYRRVGA
+                     GLAENMSLSEAWSKIPEKLTFYDYIGNNPAKGGLFRAGSMDNGDGIAVGWLGHPVFRD
+                     KERRELFVRRMPTFFETFPVVLVDGDGIVRADVPFRRAESKYSVEQVGVTVEFYGGEL
+                     NGVSYSDPATVKKYARRAQLGEIFELDRATLKSDGVFRS"
+ORIGIN      
+        1 atgatcccgg tcgattgctt tctgtccata taatgcatac agctctagtt tctggttggg
+       61 ccggctcaat ggctctatac gaattagcag tttttgatcc ctctgaccct attcttgatc
+      121 caatgtggag acaaggcatg ttcgttatac ccttcatgac tcgtttagga ataaccaatt
+      181 catggggggg ttggagtatt tcaggaagaa ctataacgaa ttcgggcatt tggagttatg
+      241 aaggcgtagc aggggcacat attgtgtttt ccggcttgtg cttcttggca gctatctggc
+      301 attgggtgta ttgggaccta saaatattct gtgatgaacg tacaggcaaa ccttctttag
+      361 atttgcccaa aatctttgga attcatttat ttctctcagg agtggcttgc tttggctttg
+      421 gcgcatttca tgtaacaggc ttatatggtc ctggaatatg ggtgtctgac ccttatggac
+      481 taactggaaa agtacaatct gtaaatccag crtggggtgc agaaggtttt gatccttttg
+      541 ttccgggggg aatagcttct catcatattg cagcgggtat attgggcata ttagcgggtt
+      601 tattccatct tagtgtccgt ccacctcaac gtctatacaa aggattacgc atgggtaata
+      661 tcgaaactgt gctttccagc agtattgctg ctgttttttt tgcagctttc gttgttgctg
+      721 gaactatgtg gtatggttca gcaactaccc caatcgaatt atttggcccc acccgttatc
+      781 agtgggatca ggggtacttc cagcaagaaa tatatcgaag ggttggggcc ggactagctg
+      841 aaaatatgag cttatcggaa gcttggtcta aaattcccga aaaattaact ttttacgatt
+      901 acattggtaa taatccagca aaaggcggat tattcagagc aggttcaatg gacaacgggg
+      961 atggaatagc tgttgggtgg ttaggtcacc ccgtatttcg agataaagaa aggcgcgaac
+     1021 tctttgtacg tcgtatgcct accttttttg aaacatttcc ggtagttttg gtagatggag
+     1081 acggaattgt aagggccgat gttccttttc gaagggcaga atcgaagtat agtgttgaac
+     1141 aagtaggggt aactgttgaa ttctatggcg gcgaactcaa tggagtcagt tatagcgatc
+     1201 ccgctactgt gaaaaaatat gctagacgtg cccaattagg tgaaatcttt gaactagacc
+     1261 gagctacttt aaaatctgat ggtgtttttc gtagca
+//
+
+LOCUS       AY705186                1383 bp    DNA     linear   PLN 26-JUL-2016
+DEFINITION  Vanilla inodora PsbC-like (psbC) gene, partial sequence;
+            chloroplast.
+ACCESSION   AY705186
+VERSION     AY705186.1
+KEYWORDS    .
+SOURCE      chloroplast Vanilla inodora
+  ORGANISM  Vanilla inodora
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; Liliopsida; Asparagales; Orchidaceae;
+            Vanilloideae; Vanilleae; Vanilla.
+REFERENCE   1  (bases 1 to 1383)
+  AUTHORS   Cameron,K.M. and Molina,M.C.
+  TITLE     Photosystem II gene sequences of psbB and psbC clarify the
+            phylogenetic position of Vanilla (Vanilloideae, Orchidaceae)
+  JOURNAL   Cladistics 22 (3), 239-248 (2006)
+REFERENCE   2  (bases 1 to 1383)
+  AUTHORS   Molina,M.C. and Cameron,K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-AUG-2004) The Lewis B. and Dorothy Cullman Program
+            for Molecular Systematics Studies, The New York Botanical Garden,
+            Bronx, NY 1058-5126, USA
+FEATURES             Location/Qualifiers
+     source          1..1383
+                     /organism="Vanilla inodora"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /isolate="1077"
+                     /specimen_voucher="C. McCartney s.n."
+                     /db_xref="taxon:256751"
+     gene            175..>1383
+                     /gene="psbC"
+     misc_feature    175..>1383
+                     /gene="psbC"
+                     /note="similar to PsbC"
+ORIGIN      
+        1 gtttatggat gagtgctatt ggagtagtcg gtctggctct gaacctacgt gcctatgact
+       61 tcgtttccca agaaatacgt gcagcggaag atcctgaatt tgaaactttc tacacaaaaa
+      121 atattttatt aaacgaaggt attcgtgctt ggatggcggc tcaggatcag cctcatgaaa
+      181 accttatatt ccctgaggag gttctacccc gtggaaacgc tctttaatgg aactttatcc
+      241 ttagtaggtc gtgaccaaga aaccaccggt ttcgcttggt gggccgggaa tgccagactt
+      301 atcaatttgt ccggtaaact acttggggct cacgtagctc atgccggatt aatcgtattc
+      361 tgggccggag gaatgaacct atttgaagtg gcccatttcg taccagagaa acccatgtat
+      421 gaacaaggat tgattttact cccgcactta gctactctag ggwggggagt aggtccgggg
+      481 ggagaagtta tcgacacctt tccatacttt gtatctggag tacttcattt aatttcctcc
+      541 gcttwcttag gctttggcgg tatttatcat gcgcttctag gacctgaaac tcttgaagaa
+      601 tcctttccat tcttcggtta tgtatggaaa gatagaaata aaatgactac gattttgggg
+      661 attcacttaa ttttattagg cataggtgct tttcttctag tactcaagga tctgtatttt
+      721 ggaagcgtat atgatacctg ggcacccgga gggggagatg tcagaaaaat taccaacttg
+      781 acccttagcc caggcgtgat gtttgggtat ttactaaaat ctccttctgg gggagaagga
+      841 tggattgtta ntgtggacga tttggaagat ataatttggg gacatgttgg gttaggtccc
+      901 atttgtatac tcggtggact ttgtcatatc ttaaccaaac ctttngcgtg ggctcgtcgt
+      961 gcatttgtat ggtccggaga ggcttactgg tcttatagtt taggcgcttt atcngtcttt
+     1021 ggtttnatcg ctggttgttt cgtmtggttc aataataccg cttatcctag tgaattttcc
+     1081 ggacatattg ggccagaagc ttctcaagct caagcattta cttttctagt gagagaccaa
+     1141 cgcctcgggg ctaacgtggg atccgcccaa ggacccactg ggttaggtaa atatctaayg
+     1201 cgttctccga ccggagaggt tatttttggg ggggaaacga tgcgtttttg ggatcttcgt
+     1261 gctccctggt tagaacctct aaggggtccc aatggtttgg acttgagtag gctgaaaaaa
+     1321 gacatacagc cttgncaaga acggcgttcg gcagaatata tgactcatgc tccttaggtt
+     1381 ctt
+//
+
+LOCUS       MN902021                 611 bp    DNA     linear   PLN 12-JAN-2020
+DEFINITION  Vanilla inodora voucher M. Soto 7954a (AMO) internal transcribed
+            spacer 1, partial sequence; 5.8S ribosomal RNA gene, complete
+            sequence; and internal transcribed spacer 2, partial sequence.
+ACCESSION   MN902021
+VERSION     MN902021.1
+KEYWORDS    .
+SOURCE      Vanilla inodora
+  ORGANISM  Vanilla inodora
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; Liliopsida; Asparagales; Orchidaceae;
+            Vanilloideae; Vanilleae; Vanilla.
+REFERENCE   1  (bases 1 to 611)
+  AUTHORS   Salazar,G.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (04-JAN-2020) Botanica, Instituto de Biologia,
+            Universidad Nacional Autonoma de Mexico, Ciurcuito Zona Deportiva
+            s.n., Mexico City 04510, Mexico
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..611
+                     /organism="Vanilla inodora"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="M. Soto 7954a (AMO)"
+                     /db_xref="taxon:256751"
+                     /country="Mexico"
+     misc_RNA        <1..>611
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 atgttccaaa cgatcgtgcg acttgtgcaa cttgtgagcc cgcgacgtcc gtttgacgtc
+       61 gcattcttcc attgcgtggg ctctcgcttt tgcgcagacc tatgtgcagt gggggacaac
+      121 cagcgtgtgg gcgcagtctt gcgccaaggg aggagcaaac gtcatcttgg caattgcgca
+      181 tcccaagggt ccggtgcgct tggcaatagg tcattgaatg actctcgaca acggatatct
+      241 tggctctcgc atcgatgaag aacgtagctt gaaatgcgat atgtgttgtg aattgtagaa
+      301 tcccgtgaac catccattct ttgaacgcaa gttgcgcccg aggatgcaag ccgagggcac
+      361 gcctgcatgg gcgcaatgcg atacgtcgct ccttgcagaa gcttgggatc gccattttgg
+      421 gtccccgggc cttttttgga agcgatgggt ggctccccat gctacggcat ggcgtgtcga
+      481 agcgtgggtt gttggctggt tgtatgacat ggcaagaggt ggacgccgcc gagcattgcg
+      541 gcgatggcca atggcacatg tcgttccatc ccgaagaccc tcagaaaatc cagctccatg
+      601 ctccttggtg t
+//
+
+LOCUS       MN902022                 613 bp    DNA     linear   PLN 12-JAN-2020
+DEFINITION  Vanilla inodora voucher M. Soto 8626 (AMO) internal transcribed
+            spacer 1, partial sequence; 5.8S ribosomal RNA gene, complete
+            sequence; and internal transcribed spacer 2, partial sequence.
+ACCESSION   MN902022
+VERSION     MN902022.1
+KEYWORDS    .
+SOURCE      Vanilla inodora
+  ORGANISM  Vanilla inodora
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; Liliopsida; Asparagales; Orchidaceae;
+            Vanilloideae; Vanilleae; Vanilla.
+REFERENCE   1  (bases 1 to 613)
+  AUTHORS   Salazar,G.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (04-JAN-2020) Botanica, Instituto de Biologia,
+            Universidad Nacional Autonoma de Mexico, Ciurcuito Zona Deportiva
+            s.n., Mexico City 04510, Mexico
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..613
+                     /organism="Vanilla inodora"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="M. Soto 8626 (AMO)"
+                     /db_xref="taxon:256751"
+                     /country="Mexico"
+     misc_RNA        <1..>613
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 agtgttccaa acgatcgtgc gacttgtgca acttgtgagg ccgcgacgtc cgtttgacgt
+       61 cgcattcttc cattgcgtgg gctctcgctt ttgcgcagac ctatgtgcag tgggggacaa
+      121 ccagcgtgtg ggcgcagtct tgcgccaagg gaggagcaaa cgtcatcttg gcaattgcgc
+      181 atcccaaggg tccggtgcgg cttggcaata ggtcattgaa tgactctcga caacggatat
+      241 cttggctctc gcatcgatga agaacgtagc ttgaaatgcg atatgtgttg tgaattgtag
+      301 aatcccgtga accatccatt ctttgaacgc aagttgcgcc cgaggatgca agccgagggc
+      361 acgcctgcat gggcgcaatg cgatacgtcg ctccttgcag aagcttggga tcgccatttt
+      421 gggtccccgg gccttttttg gaagcgatgg gtggctcccc atgctacggc atggcgtgtc
+      481 gaagcgtggg ttgttggctg gttgtatgac atggcaagag gtggacgccg ccgagcattg
+      541 cggcgatggc caatggcaca tgtcgttcca tcccgaagac cctcagaaaa tccagctcca
+      601 tgctccttgg tgt
+//
+
+LOCUS       AY381136                1289 bp    DNA     linear   PLN 26-JUL-2016
+DEFINITION  Vanilla inodora ribulose-1,5-bisphosphate carboxylase/oxygenase
+            large subunit (rbcL) gene, partial cds; chloroplast.
+ACCESSION   AY381136
+VERSION     AY381136.1
+KEYWORDS    .
+SOURCE      chloroplast Vanilla inodora
+  ORGANISM  Vanilla inodora
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; Liliopsida; Asparagales; Orchidaceae;
+            Vanilloideae; Vanilleae; Vanilla.
+REFERENCE   1  (bases 1 to 1289)
+  AUTHORS   Cameron,K.M.
+  TITLE     Utility of plastid psaB gene sequences for investigating
+            intrafamilial relationships within Orchidaceae
+  JOURNAL   Mol. Phylogenet. Evol. 31 (3), 1157-1180 (2004)
+   PUBMED   15120407
+REFERENCE   2  (bases 1 to 1289)
+  AUTHORS   Cameron,K.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-SEP-2003) Cullman Program for Molecular Systematics
+            Studies, The New York Botanical Garden, 200th St. and Southern
+            Blvd., Bronx, NY 10458, USA
+FEATURES             Location/Qualifiers
+     source          1..1289
+                     /organism="Vanilla inodora"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="C. McCartney s.n."
+                     /db_xref="taxon:256751"
+                     /note="authority: Vanilla inodora Schiede"
+     gene            <1..>1289
+                     /gene="rbcL"
+     CDS             <1..>1289
+                     /gene="rbcL"
+                     /codon_start=2
+                     /transl_table=11
+                     /product="ribulose-1,5-bisphosphate carboxylase/oxygenase
+                     large subunit"
+                     /protein_id="AAR29779.1"
+                     /translation="VGFKAGVKDYKLTYYTPDYETKDTDILAAFRVTPQPGVPPEEAG
+                     XAVAAESSTGTWTTVWTDGLTSLDRYKGRCYHIEPVVGEENQYIAYVAYPLDLFEEGS
+                     VTNMFTSIVGNVFGFKALRALRLEDLRIPTSYSKTFQGPPHGIQVERDKLNKYGRPLL
+                     GCTIKPKLGLSAKNYGRAVYECLRGGLDFTKDDENVNSQPFMRWRDRFVFCAEAIYKA
+                     QAETGEIKGHYFNATAGTCEEMIKRAVFARELGVPIVMHDYLTGGFTANTSLAHYCRD
+                     NGLLLHIHRAMHAVLDRQKNHGMHFRVLAKALRMSGGDHIHAGTVVGKLEGERELTLG
+                     FVDLLRDDFIEKDRSRGIFFTQDWVSMAGVLPVASGGIHVWHMPALTEIFGDDSVLQF
+                     GGGTLGHPWGNAPGAVANRVALEACVQARNEGRDLAL"
+ORIGIN      
+        1 tgttggattt aaagctggtg ttaaagatta caaattgact tattatactc ctgactacga
+       61 aaccaaagat actgatatct tggcagcatt ccgagtaact cctcaaccgg gagttccgcc
+      121 tgaagaagca gggmctgcgg tagctgccga atcttctact ggtacatgga caactgtgtg
+      181 gactgatgga ctgaccagtc ttgatcgtta caaagggcga tgctaccaca tcgagcccgt
+      241 tgttggggag gaaaatcaat atattgctta tgtagcttat cctttagacc tttttgaaga
+      301 aggctctgtt actaacatgt ttacttccat tgtgggcaat gtatttggtt ttaaagccct
+      361 gcgagctcta cgtctggaag atctgcgaat tccaacttct tattccaaaa ctttccaagg
+      421 tccgccacat ggcatccagg tggaaagaga taaattgaac aaatacggtc gtcccctatt
+      481 gggatgtact attaaaccaa aattgggatt atctgcaaaa aactacggta gagcggttta
+      541 tgaatgtcta cggggtgggc ttgattttac taaggatgat gaaaacgtga actcacaacc
+      601 atttatgcgt tggagagatc gtttcgtatt ttgtgccgaa gcaatttata aagcgcaagc
+      661 cgagacaggt gaaatcaaag ggcattactt taatgcaact gcgggtacct gtgaagaaat
+      721 gatcaaaaga gcggtatttg ccagagaact gggagttcct atcgtcatgc atgactactt
+      781 aactgggggg ttcaccgcaa atactagctt ggctcattat tgccgcgaca acggtctact
+      841 tcttcacatc catcgcgcaa tgcatgcagt tcttgataga cagaaaaatc atggtatgca
+      901 ttttcgtgta ctagctaaag cattacgtat gtctggggga gatcatattc acgctggtac
+      961 agtagtaggt aaactggagg gcgagcgtga gctgactttg ggttttgttg atttattacg
+     1021 tgatgatttt attgaaaaag atcgaagtcg tggtattttt ttcactcaag actgggtctc
+     1081 tatggcaggt gttctgcccg tggcttcagg gggtattcat gtttggcata tgcctgccct
+     1141 aaccgaaatc tttggggatg attccgtact acagttcggt ggaggaactt tagggcaccc
+     1201 ctggggaaat gcacccggtg cagtagctaa tcgggtggct ttagaagcat gtgtgcaagc
+     1261 tcgtaatgag ggacgtgatc ttgctctcc
+//
+
+LOCUS       AY381092                1664 bp    DNA     linear   PLN 26-JUL-2016
+DEFINITION  Vanilla inodora PsaB (psaB) gene, partial cds; chloroplast.
+ACCESSION   AY381092
+VERSION     AY381092.1
+KEYWORDS    .
+SOURCE      chloroplast Vanilla inodora
+  ORGANISM  Vanilla inodora
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; Liliopsida; Asparagales; Orchidaceae;
+            Vanilloideae; Vanilleae; Vanilla.
+REFERENCE   1  (bases 1 to 1664)
+  AUTHORS   Cameron,K.M.
+  TITLE     Utility of plastid psaB gene sequences for investigating
+            intrafamilial relationships within Orchidaceae
+  JOURNAL   Mol. Phylogenet. Evol. 31 (3), 1157-1180 (2004)
+   PUBMED   15120407
+REFERENCE   2  (bases 1 to 1664)
+  AUTHORS   Cameron,K.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-SEP-2003) Cullman Program for Molecular Systematics
+            Studies, The New York Botanical Garden, 200th St and Southern Blvd,
+            Bronx, NY 10458, USA
+FEATURES             Location/Qualifiers
+     source          1..1664
+                     /organism="Vanilla inodora"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="C. McCartney s.n."
+                     /db_xref="taxon:256751"
+                     /note="authority: Vanilla inodora Schiede"
+     gene            complement(<1..>1664)
+                     /gene="psaB"
+     CDS             complement(<1..>1664)
+                     /gene="psaB"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="PsaB"
+                     /protein_id="AAT00775.1"
+                     /translation="FESHDDITEERLYQNIFASHFGQLAIIFLWTSGNLFHVAWQGNF
+                     ESWIQDPLHVRPIAHAIWDPHFGQPAVEAFTRVGTLGPVNIAYSGVYQWWYTIGLRTN
+                     GDLYTGALFLLFLSAISLIASWLHLQPKWKPSVSWFKNAESRLNHHLSGLFGVSSLAW
+                     TGHLVHVAIPGSRGEYVRWNNFLDVLPYPQGLGPLFMGKWNLYAQNPDSSSHLFGTTQ
+                     GAGTAILTLLGGFHPQTQSLWLTDIAHHHLAIAFLFLVAGHMYRTNFGIGHSIKDLLE
+                     AHIPPGGRLGRGHKGLYDTINNSLHFQLGLALASLGVITSLVAQHMYSLPAYAFIAQD
+                     FTTQAALYTHHQYIAGFIMTGAFAHGAIFFIRDYNPEQNEDNVLARMLDHKEAITSHL
+                     SWASLFLGFHTLGLYVHNDVMLAFGTPEKQILIEPIFAQWIQSAHGKTSYGFDVLLSS
+                     TNSPAFNAGRSIWLPGWLNAINENSNSLFLTIGPGDFLVHHAIALGLHTTTLILVKGA
+                     LDARGSKLMPDKKDFGYSFPCDGPGRGGTCDISAWDAFYLAISGAK"
+ORIGIN      
+        1 tatttagctc cagaaattgc caaataaaat gcgtcccaag cagaaatatc acaagtacca
+       61 ccacgtccgg ggccgtcgca aggaaaacta taaccgaaat cctttttatc tggcattaac
+      121 ttggaacccc gtgcatctaa agcacctttt actaaaatca atgtagtcgt atgtaaaccc
+      181 agagcaatag catgatgaac caagaaatct cccggtccta ttgttaagaa aagtgaatta
+      241 ctattctcat taatagcatt caaccaacca ggtaaccata tgcttcgacc cgcattgaac
+      301 gccgggctat tcgttgaaga taagagtaca tcgaacccat acgaagtctt gccatgagcg
+      361 gattgtatcc attgggcaaa tatgggttca attaatattt gtttttccgg agtaccaaaa
+      421 gcaagcatga cgtcgttatg aacataaagc cccaaggtat ggaaccctaa aaaaaggctg
+      481 gcccaactta aatgagatgt gatagcttct ttatgatcta acattcttgc caatacatta
+      541 tcctcattct gttccggatt gtaatcccta atgaagaata ttgctccgtg agcaaaggct
+      601 cctgtcatga tgaaccctgc gatgtattgg tgatgagtat ataacgcagc ttgagtagta
+      661 aagtcttgcg ctatgaatgc ataagcaggt aaagagtaca tgtgttgagc tactaaggaa
+      721 gtaataaccc ctaaagaggc tagagcaaga cccaattgaa aatgaagcga attatttatt
+      781 gtgtcataaa gacccttatg cccacgccct aatcgacccc ccggaggaat atgtgcttct
+      841 aaaagatctt taatactgtg accaatcccg aagttagttc tatacatatg accagcaacg
+      901 agaaaaagaa atgcaatagc taagtgatga tgagcaatat cggttagcca taagctttgc
+      961 gtttgaggat ggaatccacc aagaagggtt agaatggcag ttcctgcccc ttgggtagta
+     1021 ccaaataaat gactactcga atcggggttt tgagcataaa gattccattt acccataaaa
+     1081 aggggtccca atccttgagg atatggcaat acgtctaaga aattattcca tctgacatac
+     1141 tctcctctgg atccgggaat agcaacatga actaaatgtc ctgtccaagc caaggaactg
+     1201 actccaaaaa gtcctgacaa atgatgattg agacgagatt cagcattttt gaaccatgaa
+     1261 acacttggtt tccattttgg ttgtaggtgt aaccaactcg ctattaagga tatagcagaa
+     1321 agaaataata gaaaaagagc tccagtataa agatccccat tggtgcgtaa tcctattgta
+     1381 taccaccact gataaacacc cgaataagcg atattcactg gaccgagagt acctactcta
+     1441 gtaaaggctt ctacagcagg ttgcccaaaa tgagggtccc aaattgcatg agcaataggc
+     1501 cttacatgta aagggtcttg tatccatgac tcaaaatttc cttgccaagc tacatgaaac
+     1561 agatttccgg acgtccacag aaagattatt gctaactgtc caaagtgcga agcaaaaatg
+     1621 ttctgataaa gacgttcttc agtaatatca tcatgactct cgaa
+//
+
