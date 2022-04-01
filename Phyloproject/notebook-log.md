@@ -128,3 +128,51 @@ library(phangorn)
 > tre.pars <- optim.parsimony(tre.ini, dna2_vanilla_rbcl)
 > plot(tre.pars, cex=0.6)
 
+# installing raxml
+First download the software from https://github.com/amkozlov/raxml-ng
+then place the folder into your "software" folder
+
+in the terminal: 
+./raxml-ng -h
+git clone https://github.com/amkozlov/ng-tutorial.git
+
+you'll need to be placed inside the raxml folder and then run:
+./raxml-ng -check -msa ng-tutorial/bad.fa -model GTR+G
+./raxml-ng --check --msa ng-tutorial/bad.fa.raxml.reduced.phy --model GTR+G
+
+to my understanding this both commands are checking the MSA, we are using here a toy data "ba.fa" of 6 characters. After the first command it seems it fixed a couple of errors in the alignment, after the second run our alignment is better
+
+for large data we run: 
+./raxml-ng --parse --msa ng-tutorial/prim.phy --model GTR+G
+
+now lets infer the ML tree
+./raxml-ng --msa ng-tutorial/prim.phy --model GTR+G --prefix T3 --threads 2 --seed 2
+./raxml-ng --msa ng-tutorial/prim.phy --model GTR+G --prefix T3-myseed --threads 2 --seed 3162021
+
+im not sure what the second command does, the program generate three new files: best ML tree, all ML trees and optimized model, at least the firs two can be seen in FigTree
+
+UPDATE: according to a google search: different runs with different seeds may or may not result in different trees, this depends on the dataset,
+what is guaranteed is that when you specify the same parsimony seed you'll obtain the same starting trees
+
+#running RAXML on my data
+im probably doing something wrong but i couldnt run my aligned data outside the raxml folder so i copied my aligned fasta file into the folder and then run:
+
+./raxml-ng -check -msa vanilla_rbcl-aligned.fasta -model GTR+G
+./raxml-ng --check --msa vanilla_rbcl-aligned.fasta.raxml.reduced.phy --model GTR+G
+
+./raxml-ng --msa vanilla_rbcl-aligned.fasta.raxml.reduced.phy --model GTR+G --prefix T3 --threads 2 --seed 2
+
+./raxml-ng --msa vanilla_rbcl-aligned.fasta.raxml.reduced.phy --model GTR+G --prefix T3-museed --threads 2 --seed 3162021
+
+#INSTALLING IQ-TREE
+  #download the program into your software folder
+  http://www.iqtree.org/#download
+
+  then run an example run 
+bin/iqtree2 -s example.phy
+
+#running my data using IQ-TREE
+bin/iqtree2 -s vanilla_rbcl_aligned.fasta
+
+
+
