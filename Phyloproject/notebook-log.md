@@ -7,7 +7,7 @@ My research aims to reconstruct a complete phylogeny of the neotropical clades o
   git commit –m “uploaded README.txt” 
   git push 
 
-[Feb23]
+##ALIGNMENT-CLUSTALW
 
 I had several problems trying to install clustalw. Finally I used this command and it worked!
 
@@ -137,6 +137,7 @@ in the terminal:
 git clone https://github.com/amkozlov/ng-tutorial.git
 
 you'll need to be placed inside the raxml folder and then run:
+#this is for running the toy data "bad.fa""
 ./raxml-ng -check -msa ng-tutorial/bad.fa -model GTR+G
 ./raxml-ng --check --msa ng-tutorial/bad.fa.raxml.reduced.phy --model GTR+G
 
@@ -173,6 +174,54 @@ bin/iqtree2 -s example.phy
 
 #running my data using IQ-TREE
 bin/iqtree2 -s vanilla_rbcl_aligned.fasta
+
+
+#MrBAYES
+
+#INSTALLATION (mac)
+Download MrBayes (using the terminal)
+I followed this tutorial https://github.com/NBISweden/MrBayes/blob/develop/INSTALL
+1. Install Homebrew here https://brew.sh/ (it take a while)
+2. use the following commands
+    brew tap brewsci/bio
+    brew install mrbayes
+    
+#IMPORT DATA
+For running MrBayes you need a nexus file, 
+use CLUSTALW to export an aligned NEXUS file
+run on the terminal: 
+clustalw2 -ALIGN -INFILE=vanilla_rbcl.fasta -OUTFILE=VANILLA_RBCL-aligned -OUTPUT=NEXUS
+
+##CREATE A MMBLOCK
+Create a txt file and copy the following text, make sure to create the file inside the same folder where your sequences are
+
+begin mrbayes;
+ set autoclose=yes;
+ prset brlenspr=unconstrained:exp(10.0);
+ prset shapepr=exp(1.0);
+ prset tratiopr=beta(1.0,1.0);
+ prset statefreqpr=dirichlet(1.0,1.0,1.0,1.0);
+ lset nst=2 rates=gamma ngammacat=4;
+ mcmcp ngen=10000 samplefreq=10 printfreq=100 nruns=1 nchains=3 savebrlens=yes;
+ outgroup Anacystis_nidulans;
+ mcmc;
+ sumt;
+end;
+
+now fused both documents: nexus file+mmblock using:
+  cat VANILLA_RBCL-aligned mbblock.txt>VANILLA_RBCL-mb.nex
+
+and finally run MrBAYES
+  mb VANILLA_RBCL-mb.nex
+
+an error pop up, because i didnt edit the txt file with an OUTGROUP
+i decided to include an Epistephium species as an OUTGROUP in my original fasta file and redo all the analysis
+
+Now it worked!
+i did the same with my matk sequences #is_alive!
+
+
+
 
 
 
