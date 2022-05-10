@@ -239,18 +239,18 @@ specifyUboots=1000
 
 ## ML ANALYSIS
 
-# Here i decided to go for IQ-tree since is really easy to use and has the plus that incorporate ModelFinder which test among different subtitution models and picks automatically the one with the highest AIC score. In addition has bult-in UFbootstrap. 
+#Here i decided to go for IQ-tree since is really easy to use and has the plus that incorporate ModelFinder which test among different subtitution models and picks automatically the one with the highest AIC score. In addition has bult-in UFbootstrap. 
 #For runnning my data i used the following command (in this case for my rbcl fasta file):
 
 bin/iqtree2 -s vanilla_rbcl_aligned.fasta -bb 1000
 
 ##bb refers to the bootstrap iterations which in this case is set up for 1000 repetitions. 
 
-## after running the program, it produced several files including an iqtree which functions a a log with all the parameter of the running including the different models tested as well as a ML and a consensus tree, for the purpose of this project i choose the latter for interpretation. 
+#after running the program, it produced several files including an iqtree which functions a a log with all the parameter of the running including the different models tested as well as a ML and a consensus tree, for the purpose of this project i choose the latter for interpretation. 
 
 ## BI ANALYSIS
 
-##Installing Beast/Beauti
+#Installing Beast/Beauti
 Download from here http://www.beast2.org/
 
 #After installing Beast, a pacjage of several tools installed in my computer including BEAST, BEAUTi, LogCombiner, TreeAnnotator and DensiTree. Tracer will need to and can be download from here 
@@ -264,7 +264,7 @@ https://taming-the-beast.org/tutorials/Introduction-to-BEAST2/#fig:tracer_joint
 https://github.com/Taming-the-BEAST/Substitution-model-averaging
 https://github.com/BEAST2-Dev/bModelTest/wiki
 
-# In genera terms the pipeline goes as this:
+#In general terms the pipeline goes as this:
 - Import your data to BEAUTI (fasta aligned files)
 - decided if you want to link your files (this is only needed if you had more than one DNA region, or i you thing certaing regons may have different assumptions (clocl model, site model, etc).
 - Choose the site model, the program only give you a couple that according to some FAQ you can modified to the different other models. In my case i installed first the bModelTest which choose the model for me and selected this option in the site Model tab. 
@@ -280,7 +280,7 @@ https://github.com/BEAST2-Dev/bModelTest/wiki
 
 #My first attemps was not succesfull, with ESS values way below 200, which according to the tutorial is not desirable. After doing some research I found that setting up the values of MCMC to 20 and 40 million may results in convergence and higher ESS values, i intended with 20 million which worked for matk adn rbcl but not for nrITS. #After some testing i ended up using 70 million iterations for my nrITS data which gave me high ESS values. This took almost 14 hours to run! 
 
-##TIP LABELS
+#TIP LABELS
 
 #I realized that in order to modify the labels i needed to have my  fasta file with the correct labels since the beggining of my pipeline, that means before running the allignment. After several hours looking for an easy way to change my labels i found this small tutorial to do it, Unfortunaly does not pull the posterior or bootstrap values, but worth trying. I endded up changing my tip labels manually.
 #source:  https://www.researchgate.net/post/How_to_edit_tip_labels_in_MEGA
