@@ -222,6 +222,77 @@ i did the same with my matk sequences #is_alive!
 
 
 
+====================================================
+## MP ANALYSIS
+
+#I decided to used the CIPRES website which have several Phylogenetic programs implemented in their server
+https://www.phylo.org/
+
+#First tyou upload the input files as an aligned data matrix, in my case the fasta aligned files of matk, rbcl, nrITS, and then selec the tool, i choose the MPboot XSEDE with the following parameters:
+
+runtime=0.5h
+seed_val=12345
+sepecyIterations=auto
+specifyUboots=1000
+
+#the program does not take so long to procces the imput data and provided several output files including a .mpboot file and a parsimonious tree (.parstree) as well as a concensus tree (.contree). The mpboot file works as a log with have all the running information. For the analysis i decided to use the consensus tree.
+
+## ML ANALYSIS
+
+# Here i decided to go for IQ-tree since is really easy to use and has the plus that incorporate ModelFinder which test among different subtitution models and picks automatically the one with the highest AIC score. In addition has bult-in UFbootstrap. 
+#For runnning my data i used the following command (in this case for my rbcl fasta file):
+
+bin/iqtree2 -s vanilla_rbcl_aligned.fasta -bb 1000
+
+##bb refers to the bootstrap iterations which in this case is set up for 1000 repetitions. 
+
+## after running the program, it produced several files including an iqtree which functions a a log with all the parameter of the running including the different models tested as well as a ML and a consensus tree, for the purpose of this project i choose the latter for interpretation. 
+
+## BI ANALYSIS
+
+##Installing Beast/Beauti
+Download from here http://www.beast2.org/
+
+#After installing Beast, a pacjage of several tools installed in my computer including BEAST, BEAUTi, LogCombiner, TreeAnnotator and DensiTree. Tracer will need to and can be download from here 
+https://github.com/beast-dev/tracer/releases/tag/v1.7.2
+
+#To get a good idea how BEAST worked i followed the beggenigers tutorial here:
+https://taming-the-beast.org/tutorials/Introduction-to-BEAST2/#fig:tracer_joint
+
+#I found that BEAST has a bult-in packacgae for model sites called bModelTest that can be installed going to BEAUTi to file/Lauch apps. I decided to used that packacge for my data following this two tutorials:
+
+https://github.com/Taming-the-BEAST/Substitution-model-averaging
+https://github.com/BEAST2-Dev/bModelTest/wiki
+
+# In genera terms the pipeline goes as this:
+- Import your data to BEAUTI (fasta aligned files)
+- decided if you want to link your files (this is only needed if you had more than one DNA region, or i you thing certaing regons may have different assumptions (clocl model, site model, etc).
+- Choose the site model, the program only give you a couple that according to some FAQ you can modified to the different other models. In my case i installed first the bModelTest which choose the model for me and selected this option in the site Model tab. 
+- Then, set priors, which in my case was limited to leave the values as default.
+- Set up the MCMC chain lenght, this vary among data, but a good staring point is 10 million. In addition you need to enter the store every, tracelog, screenlog and treelog values which can be 1000 in this example
+-Now save this settings as a xml file.
+-Then, open BEAST and enter as an output the xml file you generated and run.
+- The program will generate several files including a log and a trees files
+- Open the log in Tracer and look for the ESS values, anything below 200 will be in yellow or red which means low convergence, which in few words means, that the MCMC needs more time.
+- If you are using the bModeltest look for the BMT_ModelIndicator which will give the time the posterior value the chain spend more time, the bar with the highest value correspon to the more support site model. The X axis only gives you numbers, you'll need to refer to the puplication of the package or the tutorial for an interpretation of the model, for example a bar on 17 means K81 model. 
+- Then, open TreeAnnotor and load the tree file, the burnin percentage and the PP limit depends on the user, but as a thubm rule you can use a 20% and 0.5 PP, which is the threshold i used on my data. Following the tutorial you'll need to change the node heights to mean hts. 
+- Finally this will produce a tree file that you can visualize in FigTree. the posterior values are the ones that the program would ask you to introduce at the begginig and later can be visualize using the branches label tab.
+
+#My first attemps was not succesfull, with ESS values way below 200, which according to the tutorial is not desirable. After doing some research I found that setting up the values of MCMC to 20 and 40 million may results in convergence and higher ESS values, i intended with 20 million which worked for matk adn rbcl but not for nrITS. #After some testing i ended up using 70 million iterations for my nrITS data which gave me high ESS values. This took almost 14 hours to run! 
+
+##TIP LABELS
+
+#I realized that in order to modify the labels i needed to have my  fasta file with the correct labels since the beggining of my pipeline, that means before running the allignment. After several hours looking for an easy way to change my labels i found this small tutorial to do it, Unfortunaly does not pull the posterior or bootstrap values, but worth trying. I endded up changing my tip labels manually.
+#source:  https://www.researchgate.net/post/How_to_edit_tip_labels_in_MEGA
+#ScripT:
+> vanilla_its<-read.tree("final_treev2")
+> tree2<-read.nexus("final_ITS_copy.tree")
+> tips<-read.csv("tip_labels.csv$species")
+> tips<-read.csv("tip_labels.csv")
+> newtree<-phylotools::sub.taxa.label(tree2,tips)
+> ape::write.tree(newtree, file="Newtree.txt")
+
+#SORRY_FOR_MY_TERRIBLE_GRAMMAR
 
 
 
